@@ -1,0 +1,13 @@
+# Ignore source code
+app\hudi*
+*.pyc
+__pycache__/
+
+# Keep wheel files
+!dist/*.whl
+
+# Ignore local venv
+.venv/
+
+#Ignore utils
+notes*.txt

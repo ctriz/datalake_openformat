@@ -89,3 +89,40 @@ The notebooks walk through ingestion, updates, deletes, incremental pulls, and t
 ---
 Use this repo to benchmark both approaches, understand trade-offs, and inform **architectural decisions** for your Data Lakehouse design.
 
+## How-To Run This
+This project ships as a **Python wheel (**`**.whl**`**)** and is deployed via Docker + AWS ECS.
+
+ **1. Build the wheel locally (if updating)**
+    
+    python setup.py bdist_wheel
+    cp dist/*.whl repo/dist/
+    
+  **2. Build and tag Docker image**
+    
+    docker build -t hudi-ecs:latest -f docker/Dockerfile .
+     docker tag hudi-ecs:latest 123456789012.dkr.ecr.us-east-1.amazonaws.com/hudi-ecs:latest    
+  
+ **3. Push Docker image to ECR**
+    
+    docker push 123456789012.dkr.ecr.us-east-1.amazonaws.com/hudi-ecs:latest
+    
+ **4. Update ECS Task Definition**
+    
+    aws ecs register-task-definition --cli-input-json file://ecs/task-definition.json
+    
+ **5. Deploy / Run ECS Task**
+     
+    aws ecs run-task --cluster my-cluster --launch-type FARGATE --task-definition hudi-task
+
+## Copyright and Licensing
+
+Copyright © 2025 Tridib C[@ctriz]. This project is licensed under the MIT License.
+***
+
+## Contributions and Feedback
+
+- Contributions welcome!
+- Issues, feature requests, and pull requests encouraged.
+- Contact via GitHub Discussions or email.
+
+***

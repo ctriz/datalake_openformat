@@ -1,0 +1,26 @@
+{
+  "family": "hudi-task",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "2048",
+  "memory": "4096",
+  "containerDefinitions": [
+    {
+      "name": "hudi-job",
+      "image": "824190116118.dkr.ecr.us-east-1.amazonaws.com/hudi-ecs:latest",
+      "essential": true,
+      "entryPoint": ["python", "-m"],
+      "command": ["hudi_trips_cow"],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/hudi",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ]
+}
+
+

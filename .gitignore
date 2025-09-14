@@ -1,0 +1,18 @@
+# .gitignore
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+utils/config.py
+utils/config.yaml
+.venv/
+logs/
+test/
+config/
+local*
+jars/
+spark-warehouse/
+*hudi_table_data/

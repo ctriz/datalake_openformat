@@ -1,0 +1,74 @@
+{
+  "partitionToWriteStats" : {
+    "la" : [ {
+      "fileId" : "f0a7eb3c-0aa5-4774-b363-a8403708cc6c-2",
+      "path" : "la/.f0a7eb3c-0aa5-4774-b363-a8403708cc6c-2_20250914144612707.log.1_0-39-91",
+      "cdcStats" : null,
+      "prevCommit" : "20250914144612707",
+      "numWrites" : 1,
+      "numDeletes" : 0,
+      "numUpdateWrites" : 1,
+      "numInserts" : 0,
+      "totalWriteBytes" : 1268,
+      "totalWriteErrors" : 0,
+      "tempPath" : null,
+      "partitionPath" : "la",
+      "totalLogRecords" : 0,
+      "totalLogFilesCompacted" : 0,
+      "totalLogSizeCompacted" : 0,
+      "totalUpdatedRecordsCompacted" : 0,
+      "totalLogBlocks" : 0,
+      "totalCorruptLogBlock" : 0,
+      "totalRollbackBlocks" : 0,
+      "fileSizeInBytes" : 1268,
+      "minEventTime" : null,
+      "maxEventTime" : null,
+      "runtimeStats" : {
+        "totalScanTime" : 0,
+        "totalUpsertTime" : 86,
+        "totalCreateTime" : 0
+      },
+      "logVersion" : 1,
+      "logOffset" : 0,
+      "baseFile" : "f0a7eb3c-0aa5-4774-b363-a8403708cc6c-2_0-9-0_20250914144612707.parquet",
+      "logFiles" : [ ".f0a7eb3c-0aa5-4774-b363-a8403708cc6c-2_20250914144612707.log.1_0-39-91" ],
+      "recordsStats" : {
+        "val" : null
+      }
+    } ],
+    "nyc" : [ {
+      "fileId" : "f0a7eb3c-0aa5-4774-b363-a8403708cc6c-0",
+      "path" : "nyc/f0a7eb3c-0aa5-4774-b363-a8403708cc6c-0_1-39-92_20250914145128779.parquet",
+      "cdcStats" : null,
+      "prevCommit" : "20250914144612707",
+      "numWrites" : 3,
+      "numDeletes" : 0,
+      "numUpdateWrites" : 0,
+      "numInserts" : 1,
+      "totalWriteBytes" : 436325,
+      "totalWriteErrors" : 0,
+      "tempPath" : null,
+      "partitionPath" : "nyc",
+      "totalLogRecords" : 0,
+      "totalLogFilesCompacted" : 0,
+      "totalLogSizeCompacted" : 0,
+      "totalUpdatedRecordsCompacted" : 0,
+      "totalLogBlocks" : 0,
+      "totalCorruptLogBlock" : 0,
+      "totalRollbackBlocks" : 0,
+      "fileSizeInBytes" : 436325,
+      "minEventTime" : null,
+      "maxEventTime" : null,
+      "runtimeStats" : {
+        "totalScanTime" : 0,
+        "totalUpsertTime" : 144,
+        "totalCreateTime" : 0
+      }
+    } ]
+  },
+  "compacted" : false,
+  "extraMetadata" : {
+    "schema" : "{\"type\":\"record\",\"name\":\"hudi_trips_table_mor_record\",\"namespace\":\"hoodie.hudi_trips_table_mor\",\"fields\":[{\"name\":\"trip_id\",\"type\":\"string\"},{\"name\":\"ts\",\"type\":[\"null\",{\"type\":\"long\",\"logicalType\":\"timestamp-micros\"}],\"default\":null},{\"name\":\"rider\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"driver_id\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"fare\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"city\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"trip_date\",\"type\":[\"null\",{\"type\":\"int\",\"logicalType\":\"date\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",\"string\"],\"default\":null}]}"
+  },
+  "operationType" : "UPSERT"
+}

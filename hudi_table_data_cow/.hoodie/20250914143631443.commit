@@ -1,0 +1,67 @@
+{
+  "partitionToWriteStats" : {
+    "la" : [ {
+      "fileId" : "5c245ad1-9adb-4a4d-85f2-0cad5a82223d-2",
+      "path" : "la/5c245ad1-9adb-4a4d-85f2-0cad5a82223d-2_0-61-113_20250914143631443.parquet",
+      "cdcStats" : null,
+      "prevCommit" : "20250914143401317",
+      "numWrites" : 2,
+      "numDeletes" : 0,
+      "numUpdateWrites" : 1,
+      "numInserts" : 0,
+      "totalWriteBytes" : 436180,
+      "totalWriteErrors" : 0,
+      "tempPath" : null,
+      "partitionPath" : "la",
+      "totalLogRecords" : 0,
+      "totalLogFilesCompacted" : 0,
+      "totalLogSizeCompacted" : 0,
+      "totalUpdatedRecordsCompacted" : 0,
+      "totalLogBlocks" : 0,
+      "totalCorruptLogBlock" : 0,
+      "totalRollbackBlocks" : 0,
+      "fileSizeInBytes" : 436180,
+      "minEventTime" : null,
+      "maxEventTime" : null,
+      "runtimeStats" : {
+        "totalScanTime" : 0,
+        "totalUpsertTime" : 190,
+        "totalCreateTime" : 0
+      }
+    } ],
+    "nyc" : [ {
+      "fileId" : "262b90f6-d56f-4606-83d0-1540d4991e8d-0",
+      "path" : "nyc/262b90f6-d56f-4606-83d0-1540d4991e8d-0_1-61-114_20250914143631443.parquet",
+      "cdcStats" : null,
+      "prevCommit" : "20250914143401317",
+      "numWrites" : 3,
+      "numDeletes" : 0,
+      "numUpdateWrites" : 0,
+      "numInserts" : 1,
+      "totalWriteBytes" : 436360,
+      "totalWriteErrors" : 0,
+      "tempPath" : null,
+      "partitionPath" : "nyc",
+      "totalLogRecords" : 0,
+      "totalLogFilesCompacted" : 0,
+      "totalLogSizeCompacted" : 0,
+      "totalUpdatedRecordsCompacted" : 0,
+      "totalLogBlocks" : 0,
+      "totalCorruptLogBlock" : 0,
+      "totalRollbackBlocks" : 0,
+      "fileSizeInBytes" : 436360,
+      "minEventTime" : null,
+      "maxEventTime" : null,
+      "runtimeStats" : {
+        "totalScanTime" : 0,
+        "totalUpsertTime" : 190,
+        "totalCreateTime" : 0
+      }
+    } ]
+  },
+  "compacted" : false,
+  "extraMetadata" : {
+    "schema" : "{\"type\":\"record\",\"name\":\"hudi_trips_table_cow_record\",\"namespace\":\"hoodie.hudi_trips_table_cow\",\"fields\":[{\"name\":\"trip_id\",\"type\":\"string\"},{\"name\":\"ts\",\"type\":[\"null\",{\"type\":\"long\",\"logicalType\":\"timestamp-micros\"}],\"default\":null},{\"name\":\"rider\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"driver_id\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"fare\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"city\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"trip_date\",\"type\":[\"null\",{\"type\":\"int\",\"logicalType\":\"date\"}],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",\"string\"],\"default\":null}]}"
+  },
+  "operationType" : "UPSERT"
+}

@@ -1,0 +1,67 @@
+{
+  "partitionToWriteStats" : {
+    "sf" : [ {
+      "fileId" : "f0a7eb3c-0aa5-4774-b363-a8403708cc6c-1",
+      "path" : "sf/f0a7eb3c-0aa5-4774-b363-a8403708cc6c-1_0-153-437_20250914161102142.parquet",
+      "cdcStats" : null,
+      "prevCommit" : "20250914144612707",
+      "numWrites" : 3,
+      "numDeletes" : 0,
+      "numUpdateWrites" : 0,
+      "numInserts" : 1,
+      "totalWriteBytes" : 437975,
+      "totalWriteErrors" : 0,
+      "tempPath" : null,
+      "partitionPath" : "sf",
+      "totalLogRecords" : 0,
+      "totalLogFilesCompacted" : 0,
+      "totalLogSizeCompacted" : 0,
+      "totalUpdatedRecordsCompacted" : 0,
+      "totalLogBlocks" : 0,
+      "totalCorruptLogBlock" : 0,
+      "totalRollbackBlocks" : 0,
+      "fileSizeInBytes" : 437975,
+      "minEventTime" : null,
+      "maxEventTime" : null,
+      "runtimeStats" : {
+        "totalScanTime" : 0,
+        "totalUpsertTime" : 162,
+        "totalCreateTime" : 0
+      }
+    } ],
+    "la" : [ {
+      "fileId" : "28118ca9-3bd9-46dc-b167-d9aff7c68231-2",
+      "path" : "la/28118ca9-3bd9-46dc-b167-d9aff7c68231-2_1-153-438_20250914161102142.parquet",
+      "cdcStats" : null,
+      "prevCommit" : "20250914144612707",
+      "numWrites" : 3,
+      "numDeletes" : 0,
+      "numUpdateWrites" : 0,
+      "numInserts" : 1,
+      "totalWriteBytes" : 438006,
+      "totalWriteErrors" : 0,
+      "tempPath" : null,
+      "partitionPath" : "la",
+      "totalLogRecords" : 0,
+      "totalLogFilesCompacted" : 0,
+      "totalLogSizeCompacted" : 0,
+      "totalUpdatedRecordsCompacted" : 0,
+      "totalLogBlocks" : 0,
+      "totalCorruptLogBlock" : 0,
+      "totalRollbackBlocks" : 0,
+      "fileSizeInBytes" : 438006,
+      "minEventTime" : null,
+      "maxEventTime" : null,
+      "runtimeStats" : {
+        "totalScanTime" : 0,
+        "totalUpsertTime" : 164,
+        "totalCreateTime" : 0
+      }
+    } ]
+  },
+  "compacted" : false,
+  "extraMetadata" : {
+    "schema" : "{\"type\":\"record\",\"name\":\"hudi_trips_table_mor_record\",\"namespace\":\"hoodie.hudi_trips_table_mor\",\"fields\":[{\"name\":\"trip_id\",\"type\":\"string\"},{\"name\":\"ts\",\"type\":[\"null\",{\"type\":\"long\",\"logicalType\":\"timestamp-micros\"}],\"default\":null},{\"name\":\"rider\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"driver_id\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"fare\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"city\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"trip_date\",\"type\":[\"null\",{\"type\":\"int\",\"logicalType\":\"date\"}],\"default\":null},{\"name\":\"trip_type\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"payment_method\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"is_peak_hour\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"trip_duration\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"trip_distance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"payment_status\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",\"string\"],\"default\":null}]}"
+  },
+  "operationType" : "UPSERT"
+}

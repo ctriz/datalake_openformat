@@ -1,0 +1,8 @@
+{
+  "partitionToWriteStats" : { },
+  "compacted" : false,
+  "extraMetadata" : {
+    "schema" : "{\"type\":\"record\",\"name\":\"hudi_trips_table_mor_record\",\"namespace\":\"hoodie.hudi_trips_table_mor\",\"fields\":[{\"name\":\"trip_id\",\"type\":\"string\"},{\"name\":\"ts\",\"type\":[\"null\",{\"type\":\"long\",\"logicalType\":\"timestamp-micros\"}],\"default\":null},{\"name\":\"rider\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"driver_id\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"fare\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"city\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"trip_date\",\"type\":[\"null\",{\"type\":\"int\",\"logicalType\":\"date\"}],\"default\":null},{\"name\":\"trip_type\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"payment_method\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"is_peak_hour\",\"type\":[\"null\",\"boolean\"],\"default\":null},{\"name\":\"trip_duration\",\"type\":[\"null\",\"int\"],\"default\":null},{\"name\":\"trip_distance\",\"type\":[\"null\",\"double\"],\"default\":null},{\"name\":\"payment_status\",\"type\":[\"null\",\"string\"],\"default\":null},{\"name\":\"uuid\",\"type\":[\"null\",\"string\"],\"default\":null}]}"
+  },
+  "operationType" : "DELETE"
+}

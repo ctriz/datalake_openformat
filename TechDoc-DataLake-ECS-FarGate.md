@@ -21,6 +21,11 @@ Output: `.whl` in `dist/`.
 -   Copy the `.whl` and install it inside container.
 -   Add Hudi bundle JAR into Spark jars path.
 -   Example local test:
+
+ ```
+ docker build -t hudi-ecs .
+ docker run --rm hudi-ecs python -m hudi_trips_cow
+ ```  
    
 ## Push to Amazon ECR
 
